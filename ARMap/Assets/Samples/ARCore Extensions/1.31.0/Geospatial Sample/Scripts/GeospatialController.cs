@@ -609,8 +609,8 @@ namespace Google.XR.ARCoreExtensions.Samples.Geospatial
 
             Debug.LogError(reason);
             SnackBarText.text = reason;
-            _isReturning = true;
-            Invoke(nameof(QuitApplication), _errorDisplaySeconds);
+            // _isReturning = true;
+            // Invoke(nameof(QuitApplication), _errorDisplaySeconds);
         }
 
         private void QuitApplication()
