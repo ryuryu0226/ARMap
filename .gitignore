@@ -62,4 +62,5 @@ ehthumbs.db
 Thumbs.db
 
 # My Ignore
-
+Secrets/
+.so
