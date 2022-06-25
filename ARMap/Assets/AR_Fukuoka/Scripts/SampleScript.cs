@@ -34,6 +34,18 @@ using AR_Fukuoka;
             // 初期化失敗またはトラッキングができたいない場合は何もしないで戻る
             if ( ! Initializer.IsReady || EarthManager.EarthTrackingState != TrackingState.Tracking)
             {
+                bool flag1 = ! Initializer.IsReady;
+                bool flag2 = EarthManager.EarthTrackingState != TrackingState.Tracking;
+                bool flag3 = ARSession.state == ARSessionState.SessionTracking;
+                OutputText.text = string.Format(
+                " \n\n" +
+                " ! Initializer.IsReady: {0}\n" + 
+                " EarthManager.EarthTrackingState != TrackingState.Tracking: {1}\n" + 
+                " ARSession.state == ARSessionState.SessionTracking: {2}\n",
+                flag1.ToString(),
+                flag2.ToString(),
+                flag3.ToString()
+                );
                 return;
             }
             // トラッキング結果を取得
