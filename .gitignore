@@ -62,5 +62,6 @@ ehthumbs.db
 Thumbs.db
 
 # My Ignore
+ARMap/Temp/UnityLockfile
 Secrets/
 .so
